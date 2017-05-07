@@ -1,5 +1,11 @@
 # Calling Convention Quick Reference
 
+## ARMv6
+
+General Purpose Registers: r0-r3
+
+In general, the first four scalar arguments occupy the next available general-purpose register and any remaining arguments are passed on the stack.
+
 ## ARM 64-bit
 
 General Purpose Registers: x0-x7  

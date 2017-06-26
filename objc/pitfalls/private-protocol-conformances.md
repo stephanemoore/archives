@@ -5,7 +5,8 @@ subclass can unintentionally break functionality in the superclass.
 Consider the following example:
 
 ```Objective-C
-// Protocols.h
+// FruitProtocol.h
+
 @protocol FruitProtocol
 - (void)apple;
 @end
@@ -16,7 +17,7 @@ Consider the following example:
 
 #import <Foundation/Foundation.h>
 
-#import "Protocols.h"
+#import "FruitProtocol.h"
 
 @interface BrittleBaseClass : NSObject
 @end

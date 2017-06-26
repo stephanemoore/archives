@@ -17,8 +17,6 @@ Consider the following example:
 
 #import <Foundation/Foundation.h>
 
-#import "FruitProtocol.h"
-
 @interface BrittleBaseClass : NSObject
 @end
 ```
@@ -27,6 +25,8 @@ Consider the following example:
 // BrittleBaseClass.m
 
 #import "BrittleBaseClass.h"
+
+#import "FruitProtocol.h"
 
 @interface BrittleBaseClass () <FruitProtocol>
 @end
@@ -45,6 +45,8 @@ Consider the following example:
 // BrokenDerivedClass.h
 
 #import "BrittleBaseClass.h"
+
+#import "FruitProtocol.h"
 
 @interface BrokenDerivedClass : BrittleBaseClass <FruitProtocol>
 @end

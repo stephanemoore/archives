@@ -26,6 +26,6 @@ ways. In some cases a local variable is an appropriate way to resolve such bugs.
 }
 ```
 
-Mutexes are another solution that resolves TOCTOU bugs though they introduce locking behavior.
+Mutexes are another solution that resolves TOCTTOU bugs though they introduce locking behavior.
 Consider the desired behavior and the desired performance characteristics when addressing
 TOCTTOU bugs.

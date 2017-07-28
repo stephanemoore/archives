@@ -112,7 +112,7 @@ As seen in the example above, if an instance of UnsafeDerivedClass were created 
 notifications. This could potentially lead to invalid application states and unexpected behaviors.
 
 This problem can be avoided in a couple ways:
-* Avoid observation termination outside of ‑dealloc.
+* Avoid observation termination outside of ‑dealloc and use flags to discard undesired events.
 * Favor observation APIs that are not vulnerable to observation manipulation in subclasses, e.g.,
 ‑[NSNotificationCenter addObserverForName:object:queue:usingBlock:].
 * Document the notification observations of a class so that subclasses can be designed to avoid causing unexpected behaviors.

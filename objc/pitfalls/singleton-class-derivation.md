@@ -58,8 +58,8 @@ Singleton interfaces may sometimes be vulnerable to inheritance. Consider the ex
 
 ```
 
-If sharedInstance is first invoked on the class DerivedSingleton then the shared instance
-will be of type DerivedSingleton and the superclass's implementation of performImportantOperation
+If +sharedInstance is first invoked on the class DerivedSingleton then the shared instance
+will be of type DerivedSingleton and the superclass's implementation of -performImportantOperation
 will not be called.
 
 Consider this alternative singleton implementation:

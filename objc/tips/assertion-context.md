@@ -4,6 +4,7 @@ Test assertions generally benefit greatly from appropriate context
 in assertion messages.
 
 ```Objective-C
+#import <Foundation/Foundation.h>
 #import <XCTest/XCTest.h>
 
 #define FOOAssertStringHasPrefix(string, prefix) \

@@ -39,11 +39,11 @@ int main(int argc, const char **argv) {
 
 ```
 
-When compiling with FORWARD_DECLARE_FOO=0 the interface for the class `Foo` is exposed
+When compiling with `FORWARD_DECLARE_FOO=0` the interface for the class `Foo` is exposed
 and the compiler is aware that the type derives from `NSObject`. The program
 output will include the log statement `"The compiler assumed Foo is of type NSObject."`.
 
-When compiling with FORWARD_DECLARE_FOO=1 the class `Foo` is forward declared.
+When compiling with `FORWARD_DECLARE_FOO=1` the class `Foo` is forward declared.
 The compiler does not have further information about the class and is unable to make an
 assumption about the type of `Foo` more specific than it being an Objective-C object.
 `Foo` may in fact be declared as an NSObject in another source file but that type

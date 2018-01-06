@@ -79,4 +79,4 @@ avoided in several ways:
 * Publicly declare implemented protocol methods in the base class header
 (note that you can use NS_REQUIRES_SUPER to require subclasses to call
 the superclass implementation).
-* Prevent subclassing of the base class.
+* [Prevent subclassing of the base class](../tips/preventing-subclasses.md).

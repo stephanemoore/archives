@@ -3,7 +3,7 @@
 ## Stringizing/Stringification
 
 Macro arguments can be converted into string constants using the `#` operator
-(see [GCC stringizing documentation](https://gcc.gnu.org/onlinedocs/gcc-8.1.0/cpp/Stringizing.html#Stringizing)).
+(see [GCC stringizing documentation](https://gcc.gnu.org/onlinedocs/cpp/Stringizing.html#Stringizing)).
 
 #### Example Program:
 ```c

@@ -7,7 +7,7 @@ clang provides a language extension that supports
 The example below demonstrates a message set on a `deprecated` attribute:
 ```Objective-C
 #if __has_extension(attribute_deprecated_with_message)
-#define FOO_DEPRECATED(...) __attribute__((deprecated(__VA_ARGS__)))
+#define FOO_DEPRECATED(...) __attribute__((deprecated("" __VA_ARGS__)))
 #else
 #define FOO_DEPRECATED(...) __attribute__((deprecated))
 #endif
@@ -18,7 +18,7 @@ extern void bar(void) FOO_DEPRECATED("Use baz instead.");
 The example below demonstrates a message set on an `unavailable` attribute:
 ```Objective-C
 #if __has_extension(attribute_unavailable_with_message)
-#define FOO_UNAVAILABLE(...) __attribute__((unavailable(__VA_ARGS__)))
+#define FOO_UNAVAILABLE(...) __attribute__((unavailable("" __VA_ARGS__)))
 #else
 #define FOO_UNAVAILABLE(...) __attribute__((unavailable))
 #endif

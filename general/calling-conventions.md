@@ -17,7 +17,9 @@ Integral and pointer types of size 8 bytes or less occupy the next general-purpo
 ## x86-64
 
 General Purpose Registers: %rdi, %rsi, %rdx, %rcx, %r8 and %r9  
-Floating-Point Registers: %xmm0 to %xmm7
+Floating-Point Registers: %xmm0 to %xmm7  
+Integer Return Value Registers: %rax, %rdx  
+Floating-Point Return Value Registers: %xmm0, %xmm1
 
 Floating point arguments, except those of type long double, occupy the next floating-point register if one is available; otherwise, they are allocated on the stack.  
 Integral and pointers types of size 8 bytes or less occupy the next general-purpose register if one is available; otherwise they are allocated on the stack.

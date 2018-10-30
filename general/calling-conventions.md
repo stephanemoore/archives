@@ -2,7 +2,7 @@
 
 ## i386
 
-i386 uses the stack to pass all arguments. The arguments can be found relative starting at 8($ebp). (The old $ebp and return value are stored at $ebp and 4($ebp), respectively.)
+i386 uses the stack to pass all arguments. The arguments can be found relative starting at 8($ebp). (The old $ebp and return address are stored at $ebp and 4($ebp), respectively.)
 
 ## ARMv6
 

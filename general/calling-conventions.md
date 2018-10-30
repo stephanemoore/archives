@@ -1,5 +1,9 @@
 # Calling Convention Quick Reference
 
+## i386
+
+i386 uses the stack to pass all arguments. The arguments can be found relative starting at 8($ebp). (The old $ebp and return value are stored at $ebp and 4($ebp), respectively.)
+
 ## ARMv6
 
 General Purpose Registers: r0-r3

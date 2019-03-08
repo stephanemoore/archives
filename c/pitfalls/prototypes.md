@@ -18,6 +18,10 @@ C99 §6.7.5.3 states the following rules for function declarators:
 > declarator that is not part of a definition of that function specifies that no
 > information about the number or types of the parameters is supplied."
 
+The [-Wstrict-prototypes](https://clang.llvm.org/docs/DiagnosticsReference.html#wstrict-prototypes)
+diagnostic flag can be used to generate warnings for function declarations that do
+not have prototypes.
+
 Note that empty parameter lists are treated differently in C++11 per C++11 §8.3.5:
 > If the parameter-declaration-clause is empty, the function takes no arguments. A
 > parameter list consisting of a single unnamed parameter of non-dependent type void

@@ -57,3 +57,30 @@ constraints on immutability.
 
 @end
 ```
+
+## Balanced Locking
+
+Use a helper function with a block parameter to ensure balanced locking.
+
+```Objective-C
+/**
+ * Executes the provided block while acquiring the given lock.
+ */
+static void ExecuteBlockWithLock(
+    os_unfair_lock_t lock,
+    void (NS_NOESCAPE ^block)()) {
+  if (!block) return;
+
+  os_unfair_lock_lock(lock);
+  block();
+  os_unfair_lock_unlock(lock);
+}
+
+int main(int argc, const char **argv) {
+  os_unfair_lock lock = OS_UNFAIR_LOCK_INIT;
+  ExecuteBlockWithLock(&lock, ^{
+    // This will acquire and release the lock.
+  });
+  return 0;
+}
+```
